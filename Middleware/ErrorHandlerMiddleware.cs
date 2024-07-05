@@ -30,7 +30,7 @@ namespace WebApi.Middleware
 
                 switch(error)
                 {
-                    case AppException e:
+                    case IdentityApi.AppException e:
                         // custom application error
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         break;
